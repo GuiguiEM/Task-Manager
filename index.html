@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script src="./js/login.js" defer></script>
     <title>Gerenciador BG</title>
 </head>
 
@@ -15,15 +15,15 @@
         <form action="">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" required> 
+                <input type="text" id="nome" placeholder="Username" required> 
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required> 
+                <input type="password" id="senha" placeholder="Password" required> 
                 <i class='bx bxs-lock-alt bx-flip-horizontal' ></i>
             </div>
 
-           <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn" id="login">Login</button>
 
            <div class="register-link">
             <p>Don't have a account? <a href="cadastro/cadastro.html">Register</a></p>
