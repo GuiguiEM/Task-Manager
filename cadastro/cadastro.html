@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="cadastro.css">
+    <script src="./cadastro.js" defer></script>
     <title>Gerenciador GB</title>
 </head>
 
@@ -14,19 +15,19 @@
         <form action="">
             <h1>Cadastro</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" required> 
+                <input type="text" placeholder="Username" required id="nomeCadastro"> 
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="email" placeholder="E-mail" required> 
+                <input type="email" placeholder="E-mail" required id="emailCadastro"> 
                 <i class='bx bxs-envelope'></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required> 
+                <input type="password" placeholder="Password" required id="senhaCadastro"> 
                 <i class='bx bxs-lock-alt bx-flip-horizontal' ></i>
             </div>
 
-           <button type="submit" class="btn">Cadastrar</button>
+           <button type="submit" class="btn" onclick="cadastrarUser()">Cadastrar</button>
 
            <div class="register-link">
             <p>Já tem uma conta? <a href="../index.html">Faça Login</a></p>
